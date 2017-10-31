@@ -4,6 +4,8 @@ import { maxLength } from './maxLength';
 import { email } from './email';
 import { pattern } from './pattern';
 import { FieldValidationFunction } from '../entities';
+import { dni } from './dni';
+import { iban } from './iban';
 
 
 interface ValidatorFunctions {
@@ -12,6 +14,8 @@ interface ValidatorFunctions {
   maxLength: FieldValidationFunction;
   email: FieldValidationFunction;
   pattern: FieldValidationFunction;
+  dni: FieldValidationFunction;
+  iban: FieldValidationFunction;
 }
 
 export const Validators: ValidatorFunctions = {
@@ -20,4 +24,6 @@ export const Validators: ValidatorFunctions = {
   maxLength,
   email,
   pattern,
+  dni,
+  iban
 };

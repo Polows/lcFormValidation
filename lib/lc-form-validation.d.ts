@@ -64,4 +64,6 @@ export namespace Validators {
   function maxLength(value: any, vm: any, customParams: LengthParams): FieldValidationResult;
   function email(value: any, vm: any): FieldValidationResult;
   function pattern(value: any, vm: any, customParams: PatternParams): FieldValidationResult;
+  function dni(value: any, vm: any): FieldValidationResult;
+  function iban(value: any, vm: any): FieldValidationResult;
 }
